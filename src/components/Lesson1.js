@@ -12,6 +12,14 @@ const questions = [
     respostas: ["olá", "oi", "uepa"]
   },
   {
+    tipo: "imagens",
+    valor: 2,
+    enunciado: "Qual animal é maior?",
+    imagem1: "/images/cachorro.jpg",
+    imagem2: "/images/gato.jpg",
+    respostas: ["cachorro", "dog"]
+  },
+  {
     tipo: "matematica",
     valor: 1,
     enunciado: "Quanto é 2 + 2?",
@@ -116,7 +124,12 @@ const Lesson1 = () => {
       {!isCompleted ? (
         <div className="question-container">
           <h2>{currentQuestion.enunciado}</h2>
-          {currentQuestion.conteudo && (
+          {currentQuestion.tipo === "imagens" ? (
+            <div className="images-container">
+              <img src={currentQuestion.imagem1} alt="Primeira imagem" className="question-image" />
+              <img src={currentQuestion.imagem2} alt="Segunda imagem" className="question-image" />
+            </div>
+          ) : currentQuestion.conteudo && (
             <p className="content">{currentQuestion.conteudo}</p>
           )}
           <input
