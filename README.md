@@ -53,8 +53,8 @@
 
 ### Dicas Extras para o README:  
 - Adicione **gifs de demonstração** (use [ScreenToGif](https://www.screentogif.com/) para capturar).  
-- Inclua um **diagrama simples** (ex.: fluxo de jogo) usando [Mermaid](https://mermaid.js.org/):  
-  ```markdown
+- Inclua um **diagrama simples** (ex.: fluxo de jogo) usando [Mermaid](https://mermaid.js.org/):
+  
   ```mermaid
   flowchart TD
     A[Tela Inicial] --> B[Escolher Tema]
@@ -77,21 +77,22 @@
 ## 🛠️ Como Executar o Projeto  
 
 1. **Clone o repositório:**  
-   ```bash
-   git clone https://github.com/gabaugusto/aprender-com-react.git
-   ```
+```bash
+git clone https://github.com/gabaugusto/aprender-com-react.git
+```
    
 2. **Instale as dependências:**  
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
    
 3. **Execute o projeto:**
-  ```bash
-  npm start
-   ```
+```bash
+npm start
+```
 
 4. **Acesse no navegador:**
+
 Abra http://localhost:3000 para ver a aplicação.
 
 ## ✨ Toque Final  
