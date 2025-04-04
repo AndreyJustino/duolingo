@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# 🚀 Projeto: Aprender com React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Missão:** Customizar um projeto genérico de aprendizado (estilo Duolingo) para resolver problemas sociais ou educacionais reais, combinando **React** com **criatividade**.  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 Problemas Inspiradores (Escolha um!)  
 
-### `npm start`
+### 🧒 **Educação Infantil**  
+- **Desafio:** Criar módulos interativos para crianças (3-6 anos) aprenderem cores, números ou empatia.  
+- **Ideia:** Personagens que "ganham vida" ao acertar respostas (ex.: um dragão que cospe confetes ao aprender a compartilhar).  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🌊 **Conscientização Marinha**  
+- **Desafio:** Ensinar sobre poluição dos oceanos e espécies ameaçadas.  
+- **Ideia:** Minijogo onde o usuário "coleta lixo virtual" para desbloquear curiosidades sobre recifes de coral.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🧠 **Saúde Mental para Jovens**  
+- **Desafio:** Reduzir ansiedade com técnicas de respiração.  
+- **Ideia:** "Fase de respiração" com animações que sincronizam com inspirações/expirações.  
 
-### `npm test`
+### 📱 **Cidadania Digital**  
+- **Desafio:** Combater fake news com gamificação.  
+- **Ideia:** Quiz "Fake ou Fact?" com placar de confiabilidade.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 💼 **Preparação para Empregos**  
+- **Desafio:** Simular entrevistas de emprego para jovens.  
+- **Ideia:** Avatar que reage às respostas ("Chefe feliz" = resposta adequada).  
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✅ Requisitos Técnicos  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Customização Visual:**  
+   - Mudar cores, imagens e textos para refletir o tema escolhido.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Gamificação Extra:**  
+   - Adicionar **1 mecânica nova** (ex.: barra de progresso temática, sistema de níveis).  
 
-### `npm run eject`
+3. **Integração com Dados Reais:**  (Opcional)
+   - Consumir uma **API simples** (ex.: [Ocean Facts](https://oceanfacts.api) ou [Mental Health Tips](https://api.adviceslip.com/)).  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Pitch de Venda:**  (Postar no Linkedin)
+   - Preparar um **vídeo de 1 minuto** explicando o impacto social da solução.  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🎁 Bônus (OPCIONAL!)  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Easter Egg:** Esconder um segredo interativo (ex.: clique 10x no logo para liberar um emoji especial).  
+- **Modo Noturno:** Se for infantil, transformar o fundo em "céu estrelado" após 18h.  
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Dicas Extras para o README:  
+- Adicione **gifs de demonstração** (use [ScreenToGif](https://www.screentogif.com/) para capturar).  
+- Inclua um **diagrama simples** (ex.: fluxo de jogo) usando [Mermaid](https://mermaid.js.org/):  
+  ```markdown
+  ```mermaid
+  flowchart TD
+    A[Tela Inicial] --> B[Escolher Tema]
+    B --> C[Jogar]
+    C --> D{Acertou?}
+    D -->|Sim| E[Pontua++]
+    D -->|Não| F[Vida--]
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📤 Entrega  
 
-### Code Splitting
+- **Repositório no GitHub** com código + `README.md` explicando:  
+  - Qual problema vocês escolheram e por quê.  
+  - Como a gamificação ajuda na solução.  
+  - Print das telas customizadas.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Vídeo Pitch** no LinkedIn (link no README).  
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🛠️ Como Executar o Projeto  
 
-### Making a Progressive Web App
+1. **Clone o repositório:**  
+   ```bash
+   git clone https://github.com/gabaugusto/aprender-com-react.git
+   ```
+   
+2. **Instale as dependências:**  
+   ```bash
+   npm install
+   ```
+   
+3. **Execute o projeto:**
+  ```bash
+  npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. **Acesse no navegador:**
+Abra http://localhost:3000 para ver a aplicação.
 
-### Advanced Configuration
+## ✨ Toque Final  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+> *"Lembrem-se: tecnologia sem propósito é só código. Tecnologia com empatia vira revolução!"*  
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Divirtam-se e façam a diferença!** 💻🌍  
