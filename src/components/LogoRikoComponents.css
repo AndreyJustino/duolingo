@@ -1,0 +1,17 @@
+.moldura-logo{
+    width: 250px;
+    height: 250px;
+    background-image: url("../img/rikoGuim.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moldura-logo h1{
+    color: #ffffff;
+    font-family: "Mochiy Pop One", sans-serif;
+    text-shadow: 2px 2px 4px #0000009d;
+    font-size: 3em;
+    
+}

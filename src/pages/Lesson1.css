@@ -1,0 +1,142 @@
+.lesson-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 12px;
+  background-color: #e5e5e5;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #58cc02;
+  border-radius: 6px;
+  transition: width 0.3s ease;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 8px 16px;
+  background-color: #e5e5e5;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.question-container {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.content {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.answer-input {
+  width: 300px;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #e5e5e5;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.check-button {
+  padding: 12px 24px;
+  background-color: #58cc02;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.check-button:disabled {
+  background-color: #e5e5e5;
+  cursor: not-allowed;
+}
+
+.feedback-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.feedback-message {
+  padding: 20px 40px;
+  border-radius: 12px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.feedback-overlay.correct .feedback-message {
+  background-color: #58cc02;
+}
+
+.feedback-overlay.incorrect .feedback-message {
+  background-color: #ff4b4b;
+}
+
+.completion-message {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.celebrate {
+  font-size: 64px;
+  margin-bottom: 20px;
+  animation: bounce 1s infinite;
+}
+
+.restart-button {
+  padding: 12px 24px;
+  background-color: #58cc02;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.images-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.question-image {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border: 2px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: white;
+}

@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
-import Login from './components/Login';
-import Home from './components/Home';
-import Lesson1 from './components/Lesson1';
+import Login from './pages/Login';
+import Home from './pages/Home';
+import Lesson1 from './pages/Lesson1';
+import Cadastro from './pages/Cadastro.js';
+import "./App.css"
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Login />} />
+          <Route path="/cadastro" element={<Cadastro />} />
           <Route path="/home" element={<Home />} />
           <Route path="/lesson1" element={<Lesson1 />} />
         </Routes>
