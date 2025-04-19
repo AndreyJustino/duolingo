@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Lesson1.css';
 
@@ -60,6 +60,13 @@ const Lesson1 = () => {
 
   const currentQuestion = questions[currentQuestionIndex];
   const progress = (currentQuestionIndex / questions.length) * 100;
+  
+  useEffect(() => {
+    const user = localStorage.getItem('user');
+    if (!user) {
+      navigate('/login');
+    }
+  }, [navigate]);
 
   const checkAnswer = () => {
     // Essa funcao é chamada quando o usuário responde a uma pergunta. 

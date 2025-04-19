@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
 
 const Home = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const user = localStorage.getItem('user');
+    if (!user) {
+      navigate('/login');
+    }
+  }, [navigate]);
 
   return (
     <div className="home-container">
