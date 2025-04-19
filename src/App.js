@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Login from './pages/Login';
-import Home from './pages/Home';
-import Lesson1 from './pages/Lesson1';
-import Cadastro from './pages/Cadastro.js';
+import Login from './pages/login/Login.js';
+import Home from './pages/home/Home.js';
+import Lesson1 from './pages/lessons/Lesson1.js';
+import Cadastro from './pages/cadastro/Cadastro.js';
 
 function App() {
   return (

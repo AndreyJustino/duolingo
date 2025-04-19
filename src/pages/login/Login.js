@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Login.css';
 import { ToastContainer, toast } from 'react-toastify';
-import LogoRiko from '../components/LogoRiko';
-import InputForms from '../components/InputForms';
+import LogoRiko from '../../components/LogoRiko.js';
+import InputForms from '../../components/InputForms.js';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -13,7 +13,7 @@ const Login = () => {
   const fazerLogin = (e) => {
     e.preventDefault(); 
     
-    const user = JSON.parse(localStorage.getItem('user'));
+    const user = JSON.parse(localStorage.getItem('user')) || {};
 
     if (email && user.email == email && user.senha == password) {
       toast.success('Login realizado com sucesso!', {
@@ -78,7 +78,9 @@ const Login = () => {
           <div>
             <InputForms forForms={"senha"} type={"password"} id={"senha"} name={"senha"} required={true} placeholder={"Digite sua senha"} props={password} setProps={setPassword}/>
           </div>
-
+          <p>
+            Não tem uma conta? <Link to={"/"} className='linkCadastro'>Clique aqui</Link>
+          </p>
         
           <button type="submit" className='button-cadastro'>Vamos começar?</button>
         </form>

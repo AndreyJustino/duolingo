@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import "./Cadastro.css"
-import LogoRiko from '../components/LogoRiko.js'
-import InputForms from '../components/InputForms.js'
-import User from '../class/User.js'
+import LogoRiko from '../../components/LogoRiko.js'
+import InputForms from '../../components/InputForms.js'
+import User from '../../class/User.js'
 import { ToastContainer, toast } from 'react-toastify';
 
 function Cadastro() {

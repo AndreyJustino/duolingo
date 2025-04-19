@@ -48,3 +48,8 @@
   button:hover {
     background-color: #46a302;
   }
+
+.linkCadastro{
+  text-decoration: none;
+  color: #1D4AFF;
+}
