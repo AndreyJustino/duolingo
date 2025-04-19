@@ -62,8 +62,8 @@ const Lesson1 = () => {
   const progress = (currentQuestionIndex / questions.length) * 100;
   
   useEffect(() => {
-    const user = localStorage.getItem('user');
-    if (!user) {
+    const login = localStorage.getItem('login');
+    if (!login) {
       navigate('/login');
     }
   }, [navigate]);

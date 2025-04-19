@@ -4,6 +4,7 @@ import "./Cadastro.css"
 import LogoRiko from '../components/LogoRiko.js'
 import InputForms from '../components/InputForms.js'
 import User from '../class/User.js'
+import { ToastContainer, toast } from 'react-toastify';
 
 function Cadastro() {
   const [name, setName] = useState("")
@@ -11,19 +12,47 @@ function Cadastro() {
   const [password, setPassword] = useState("")
   const navigate = useNavigate();
 
+
   const fazerCadastro = (e) => {
     e.preventDefault();
 
     const user = new User(name, email, password)
 
-    localStorage.setItem("user", user)
+    localStorage.setItem("user", JSON.stringify(user));
 
-    navigate("/login")
+    toast.success('Cadastro Realzado Com Sucesso', {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light"
+      });
+
+      setTimeout(() => {
+        navigate("/login");
+      }, 3000);
+
+    
   };
 
   return (
 
     <div className="div_body">
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <div className='card-forms'>
 
         <LogoRiko width={"180px"} height={"180px"}/>
